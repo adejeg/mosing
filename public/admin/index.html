@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mosing: All time music collection</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style type="text/css">
+		body{
+			background-color: #F0FFF0;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="mySidenav" class="sidenav">
+			<div class="sidenav-profile">
+				<div class="col-md-4"><img src="images/img_avatar.png"width="100%"></div>
+				<div class="col-md-8">Welcome <span>Clement</span></div>
+				<div class="clearfix"></div>
+			</div>
+			<a href="index.html">Dashboard</a>
+			<a href="upload.html">View All Upload</a>
+			<a href="user_profile.html">My Account</a>
+			<a href="song_admins.html">Admins</a>
+		</div>
+		<div id="main">
+			<header class="admin-logo">
+				<div class="logo">
+					<div class="menu-icon" onclick="openNav()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+						<a href="index.html" class="logo-head">mo<span>song</span></a>
+						<a href="index.html" class="logo-text pull-right">World Largest Music Repo</a>
+						<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</header>
+			<section id="content-control">
+				<div class="row">
+					<h1>My Dashboard</h1>
+					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+						<div class="upload-table">
+							<table>
+								<tr>
+									<th>S/No</th>
+									<th>Song Title</th>
+									<th>Name of Artist</th>
+									<th>Song Category</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>King of Glory</td>
+									<td>Shanah Wilson Williams</td>
+									<td>Worship</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>King of Glory</td>
+									<td>Shanah Wilson Williams</td>
+									<td>Worship</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>King of Glory</td>
+									<td>Shanah Wilson Williams</td>
+									<td>Worship</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>King of Glory</td>
+									<td>Shanah Wilson Williams</td>
+									<td>Worship</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>King of Glory</td>
+									<td>Shanah Wilson Williams</td>
+									<td>Worship</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<div class="all-upload">
+							<div id="songCounter"><i class="icon"></i>
+								<h3>100</h3>
+								<h3>Songs</h3>
+							</div>
+							<div class="upload-form">
+								<h4>Upload New Song</h4>
+								<form action="" method="POST">
+									<input type="text" name="song_title" class="form-control" placeholder="Enter Song Title">
+									<input type="text" name="song_artist" class="form-control" placeholder="Enter Song Artist">
+									<select id="song_category" class="form-control" name="song_category">
+										<option>--Select Category--</option>
+									</select> 
+									<select id="song_country" class="form-control" name="song_country">
+										<option>--Select Country--</option>
+									</select>
+									<textarea  rows="5" placeholder="Song Lyrics..." style="width: 100%;"></textarea>
+									<input type="submit" name="upload_song">
+									<input type="reset" name="reset_upload">
+								</form>
+							</div>
+						</div>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

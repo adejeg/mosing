@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mosing: All time music collection</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/menu_icon.css">
+	<style type="text/css">
+		body{
+			background-color: #F0FFF0;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="mySidenav" class="sidenav">
+			<div class="sidenav-profile">
+				<div class="col-md-4"><img src="images/img_avatar.png"width="100%"></div>
+				<div class="col-md-8">Welcome <span>Clement</span></div>
+				<div class="clearfix"></div>
+			</div>
+			<a href="index.html">Dashboard</a>
+			<a href="upload.html">View All Upload</a>
+			<a href="user_profile.html">My Account</a>
+			<a href="song_admins.html">Admins</a>
+		</div>
+		<div id="main">
+			<header class="admin-logo">
+				<div class="logo">
+					<div class="menu-icon" onclick="openNav()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+						<a href="index.html" class="logo-head">mo<span>song</span></a>
+						<a href="index.html" class="logo-text pull-right">World Largest Music Repo</a>
+						<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</header>
+			<section id="content-control">
+				<div class="row">
+				<h1>User Profile | Account</h1>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="user-profile">
+						<img id="user_picture" src="images/profile_user.jpg" style="width:100%; max-width: 25em;">
+						<div class="user-details">
+							<h4 id="user_name">Clement Jegede</h4>
+							<p>Music Lover</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="upload-form">
+						<h4>My Information</h4>
+						<form action="" method="POST">
+							<input type="text" name="first_name" class="form-control" placeholder="Enter Your First Name...">
+							<input type="text" name="surname" class="form-control" placeholder="Enter Your Surname">
+							<input type="text" name="phone_number" class="form-control" placeholder="+234 9099 9999 009">
+							<input type="text" name="hobby" class="form-control" placeholder="Enter Your Hobby/Interest">
+							<textarea  rows="5" placeholder="Tell Us About You..." style="width: 100%;"></textarea>
+							<select id="song_country" class="form-control" name="song_country">
+								<option>--Select Country--</option>
+							</select>
+							
+							<input type="submit" name="upload_song">
+							<input type="reset" name="reset_upload">
+						</form>
+					</div>
+				</div>
+				<div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
+					<div class="upload-form">
+						<h4>Change my Password</h4>
+						<form action="" method="POST">
+							<input type="password" name="old_password" class="form-control" placeholder="Old Password">
+
+							<input type="password" name="new_password" class="form-control" placeholder="New Password">
+							<input type="password" name="verify_password" class="form-control" placeholder="Verify Password">
+							
+							<input type="submit" name="upload_song">
+							<input type="reset" name="reset_upload">
+						</form>
+					</div>
+					<div class="image-upload">
+						<div class="image-holder">
+							<img src="../admin/images/img_avatar.png" style="width:100%; max-width: 25em;">
+						</div>
+						<div class="image-form">
+							<input type="file" name="user_image" multiple>
+							<div>
+								<input type="submit" name="submit_image">
+								<input type="reset" name="cancel_image">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+	</div>
+</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

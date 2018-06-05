@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In: All Time Music Collection</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<style type="text/css">
+		body{
+			background-color: #F0FFF0;
+		}
+	</style>
+</head>
+<body>
+	<header class="admin-logo">
+		<div class="logo">
+			<a href="index.html" class="logo-head">mo<span>song</span></a>
+			<a href="index.html" class="logo-text pull-right">World Largest Music Repo</a>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</header>
+
+	<div class="container">
+		<div id="Login" class="tabcontent">
+		  	<form method="POST" action="/login.php">
+		    	<div class="row">
+		      		<h2 style="text-align:center">Sign In</h2>
+		      		<div class="col">
+			        	<input type="text" name="username" placeholder="Username" required>
+			        	<input type="password" name="password" placeholder="Password" required>
+			        	<input type="submit" value="Sign In">
+			      	</div>
+			    </div>
+		  	</form>
+		  </div>
+		  <div id="Register" class="tabcontent">
+		  		<button class="tablinks" style="background-color:#666; width:3em; padding:0.3em; border:none; border-radius:50% 0 0% 50%; color:white" onclick="openForm(event, 'Login')">Back</button>
+		  		<form method="POST" action="/register.php">
+			    	<div class="row">
+			      		<h2 style="text-align:center">Register</h2>
+			      		<div class="col">
+			      			<input type="text" name="full_name" placeholder="Jane Doe" required>
+				        	<input type="text" name="username" placeholder="Username" required>
+				        	<input type="email" name="email" placeholder="abc@xyz.com" required>
+				        	<input type="password" name="password" placeholder="Password" required>
+				        	<input type="number" name="phone" placeholder="+2348012345678" required>
+				        	<input type="submit" value="Login">
+				      	</div>
+				    </div>
+			  	</form>
+		  	</div>
+		  	<div id="Reset_Password" class="tabcontent">
+		  		<button id="defaultOpen"class="tablinks" style="background-color:#666; width:3em; padding:0.3em; border:none; border-radius:50% 0 0% 50%; color:white" onclick="openForm(event, 'Login')">Back</button>
+		  		<form method="POST" action="/register.php">
+			    	<div class="row">
+			      		<h2 style="text-align:center">Reset Password</h2>
+			      		<div class="col">
+			      			<p>Enter Your Email Address</p>
+			      			<input type="email" name="email" placeholder="abc@xyz.com" required>
+				        	<input type="submit" value="Send Reset Link">
+				      	</div>
+				    </div>
+			  	</form>
+		  </div>
+	  	<div class="bottom-container">
+		  	<!-- <div class="row"> -->
+		    	<div class="tablinks" style="color:white" onclick="openForm(event, 'Register')">
+		      		Sign up
+		    	</div>
+		    	<div class="tablinks" style="color:white" onclick="openForm(event, 'Reset_Password')">
+		      		 Forgot password
+		    	</div>
+		  	</div>
+		<!-- </div> -->
+	</div>
+	<script type="text/javascript">
+		function openForm(evt, formName) {
+		    
+		    var i, tabcontent, tablinks;
+
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+
+		    document.getElementById(formName).style.display = "block";
+		}
+		document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>
